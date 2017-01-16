@@ -4,53 +4,29 @@
 //										//
 //////////////////////////////////////////
 
-var CALC_TITLE = "Rainwater Harvesting Calculator";
+var CALC_TITLE = "Calculadora: Captación de lluvia";
 
-var HEADER = "Rainwater Harvesting Calculator";
+var HEADER = "Calculadora de Captación de Agua de Lluvia";
 
-var SUB_HEADER = "This calculator can be used to size a rainwater harvesting system which provides enough safe  drinking and cooking water - your household’s essential water need. With any questions, comments, or collaborations, please <a href='http://caminosdeagua.org/contact-us/' target = '_blank'>contact us</a>!";
+var SUB_HEADER = "Esta calculadora puede usarse para dimensionar un sistema de recolección de agua de lluvia que proporcione suficiente agua potable para beber y cocinar - la necesidad de agua esencial en tu hogar. Si tienes preguntas, comentarios o colaboraciones, por favor <a href='http://caminosdeaguamexico.org/contactenos/' target = '_blank'>contáctanos</a>!";
 
-var INSTRUCTIONS = "<b>Please answer the questions below about your household as best as you can.</b>";
+var INSTRUCTIONS = "<b>Por favor, responde las siguientes preguntas sobre tu hogar lo mejor que puedas.</b>";
 
-var MONTHS = ["Jan", "Feb", "Mar", "Apr",
-				"May", "Jun", "Jul", "Aug",
-				"Sep", "Oct", "Nov", "Dec"];
+var MONTHS = ["Ene", "Feb", "Mar", "Abr",
+				"May", "Jun", "Jul", "Ago",
+				"Sep", "Oct", "Nov", "Dic"];
 
-var FULL_MONTHS = ["January", "February", "March",
-				"April", "May", "June",
-				"July", "August", "September",
-				"October", "November", "December"];
+var FULL_MONTHS = ["Enero", "Febrero", "Marzo",
+				"Abril", "Mayo", "Junio",
+				"Julio", "Agosto", "Septiembre",
+				"Octubre", "Noviembre", "Diciembre"];
 				
-var RAINS = ["jan_rain", "feb_rain", "mar_rain", 
-			"apr_rain", "may_rain", "jun_rain", 
-			"jul_rain", "aug_rain", "sep_rain", 
-			"oct_rain", "nov_rain", "dec_rain", ];
+var RAINS = ["ene_rain", "feb_rain", "mar_rain", 
+			"abr_rain", "may_rain", "jun_rain", 
+			"jul_rain", "ago_rain", "sep_rain", 
+			"oct_rain", "nov_rain", "dic_rain", ];
 			
-var MONTHLY_RAIN_LBL = "Please enter your region's monthly rainfall data<br>in <b>milimeters (mm)</b>:";
-				
-//////////////////////////////////////////
-//										//
-//		ERROR MESSAGES TO DISPLAY		//
-//										//
-//////////////////////////////////////////
-
-//////		TOO FEW PEOPLE			//////
-var PPL_MIN_E1 = "You need at least "; 
-var PPL_MIN_E2 = " person.";
-
-//////		TOO MANY PEOPLE			//////
-var PPL_MAX_E1 = "We do not allow more than ";
-var PPL_MAX_E2 = " people.";
-
-//////		ROOF TOO SMALL			//////
-var SIZE_MIN_E1 = "Your roof dimension must be at least 1.";
-
-//////		ROOF TOO BIG			//////
-var SIZE_MAX_E1 = "We do not allow more than ";
-var SIZE_MAX_E2 = " meters.";
-
-//////		FRACTIONAL PEOPLE		//////
-var PPL_DECIMAL_E = "You cannot have partial numbers of people";
+var MONTHLY_RAIN_LBL = "Por favor captura tus datos de lluvia mensuales<br>en <b>milímetros (mm)</b>:";
 
 //////////////////////////////////////////
 //										//
@@ -58,35 +34,33 @@ var PPL_DECIMAL_E = "You cannot have partial numbers of people";
 //										//
 //////////////////////////////////////////
 
-var CHECKBOX_LBL = "I have my own monthly rainfall data ";
+var CHECKBOX_LBL = "Tengo mis propios datos mensuales de lluvia";
 
 //////		MUNICIPALITY			//////
-var MUNI0_LBL = "Select your residence by clicking on the map below:";
-//var MUNI_VAL0_LBL = "a";
-//var MUNI_VAL1_LBL = "bcd";
+var MUNI0_LBL = "Selecciona tu domicilio haciendo clic en el mapa de abajo:";
 var MUNIS = [];
 
 //////		PEOPLE IN HOUSEHOLD		//////
-var PPL0_LBL = "How many people live in your house?";
+var PPL0_LBL = "¿Cuantas personas viven en tu casa?";
 
 //////		ROOF SIZE 				//////
-var LENGTH0_LBL = "What is the length of your roof (<b>meters</b>)?";
-var WIDTH0_LBL = "What is the width of your roof (<b>meters</b>)?";
+var LENGTH0_LBL = "¿Cuál es la longitud de tu techo (<b>metros</b>)?";
+var WIDTH0_LBL = "¿Cuál es el ancho de tu techo (<b>metros</b>)?";
 
 //////		ROOF TYPE				//////
-var ROOF0_LBL = "What kind of roof do you have?";
-var CEMENT_ROOF_LBL = "Concrete";
-var SHEET_ROOF_LBL = "Corrugated sheet";
-var SPANISH_ROOF_LBL = "Spanish tile";
+var ROOF0_LBL = "¿Qué tipo de techo tienes?";
+var CEMENT_ROOF_LBL = "Concreto";
+var SHEET_ROOF_LBL = "Lámina acanalada";
+var SPANISH_ROOF_LBL = "Teja";
 var ROOF_TYPES = [CEMENT_ROOF_LBL, SHEET_ROOF_LBL, SPANISH_ROOF_LBL];
 
-var CEMENT_ROOF_LBL_LOWER = "concrete";
-var SHEET_ROOF_LBL_LOWER = "corrugated sheet";
-var SPANISH_ROOF_LBL_LOWER = "spanish tile";
+var CEMENT_ROOF_LBL_LOWER = "concreto";
+var SHEET_ROOF_LBL_LOWER = "lámina acanalada";
+var SPANISH_ROOF_LBL_LOWER = "teja";
 var ROOF_TYPES_LOWER = [CEMENT_ROOF_LBL_LOWER, SHEET_ROOF_LBL_LOWER, SPANISH_ROOF_LBL_LOWER];
 
 //////		CALCULATE BUTTON 	    //////
-var CALC_BUTTON_LBL = "Calculate!";
+var CALC_BUTTON_LBL = "Calcula!";
 
 
 //////////////////////////////////////////
@@ -96,19 +70,19 @@ var CALC_BUTTON_LBL = "Calculate!";
 //////////////////////////////////////////
 
 //////		GO BACK BUTTON 	   	 	//////
-var BACK2INPUTS_BUTTON_LBL = "Change my information";
+var BACK2INPUTS_BUTTON_LBL = "Cambiar mi información";
 
-var LHS_DISPLAY_TITLE = "Great work!";
-var LHS_INSTRUCTIONS = "Please make sure that the following information was entered correctly. If not, press the button below to change your information. Your results are displayed in the panel to the right. For an explanation of each result, hover your mouse over the relevant box. <br><br>These results refer to your household's <b>essential water</b> need - the amount of water needed for drinking and cooking only.<br><br><i>Note: These results assume that your rainwater collection begins at the start of the rainy season. Starting at any other time of the year increases the risk of not always having enough rainwater stored during your system's first year.</i>"
+var LHS_DISPLAY_TITLE = "¡Buen trabajo!";
+var LHS_INSTRUCTIONS = "Asegúrate de que la información siguiente se introdujo correctamente. Si no, presiona el botón de abajo para cambiar tu información. Los resultados se muestran en el panel de la derecha. Para una explicación de cada resultado, pasa el ratón sobre la casilla correspondiente. <br><br>Estos resultados se refieren a la necesidad de <b>agua esencial</b> de tu hogar - la cantidad de agua necesaria para beber y cocinar solamente.<br><br><i>Nota: Estos resultados suponen que tu captación de agua de lluvia comienza al inicio de la estación de lluvia. Comenzar en cualquier otra época del año aumenta el riesgo de no tener siempre suficiente agua de lluvia almacenada durante el primer año de tu sistema.</i>"
 
-var MUN_TXT = ["You live in <b>","</b>."];
+var MUN_TXT = ["Vives en <b>","</b>."];
 var MONTHLY_USE_TXT = "You have chosen to enter your own monthly rainfall data. <i>Please note: we cannot account for how much water you will use to flush your roof on each rainfall, so the results to the right will be slight under-estimates.</i><br><br>You have entered:"
 var UNITS = "mm";
-var PPL_TXT = ["Your household has <b>"," </b>person."," </b>people."];
-var LEN_WID_TXT = ["Your roof is <b>"," long by <b>"," wide."];
-var SINGULAR_DIMENSION = "</b> meter";
-var PLURAL_DIMENSION = "</b> meters";
-var ROOF_TYPE_TXT = ["You have a <b>","</b> roof."];
+var PPL_TXT = ["Tu hogar tiene <b>"," </b>persona."," </b>personas."];
+var LEN_WID_TXT = ["Tu techo es de <b>"," de largo por <b>"," de ancho."];
+var SINGULAR_DIMENSION = "</b> metro";
+var PLURAL_DIMENSION = "</b> metros";
+var ROOF_TYPE_TXT = ["Tienes un techo de <b>","</b>."];
 
 var DISPLAY_TXT = [];
 
@@ -119,23 +93,22 @@ var DISPLAY_TXT = [];
 //////////////////////////////////////////
 
 
-var MIN_ROOF_LBL = ["Your household needs a minimum of", "square-meters of roof area to collect enough rainwater to cover your essential water needs."];
-var MIN_TANK_LBL = ["If you use the minimum roof area, you need at least a", "liter cistern."];
-var REAL_ROOF_LBL_GREEN = ["Your actual roof area of", "square-meters <b><big>can</big></b> collect enough water to provide at least", "liters per day, which is your household's essential water need."]; 
-var REAL_ROOF_LBL_RED = ["Your actual roof area of", "square-meters <b>cannot</b> collect enough water to provide ", " liters per day, which is your household's essential water need."];
-var REAL_TANK_LBL = ["If you want to collect all the water off your current roof, you need a cistern that is at least", "liters."];
+var MIN_ROOF_LBL = ["Tu hogar necesita un mínimo de", "metros cuadrados del área del techo para captar suficiente agua de lluvia para cubrir tus necesidades esenciales de agua."];
+var MIN_TANK_LBL = ["Si utilizas el área mínima del techo, necesitas al menos una cisterna de ", "litros."];
+var REAL_ROOF_LBL_GREEN = ["El área de tu techo de", "metros cuadrados <b><big>puede</big></b> recoger suficiente agua para proporcionar al menos", "litros por día, que es la necesidad de agua esencial de tu hogar."]; 
+var REAL_ROOF_LBL_RED = ["El área de tu techo de", "metros cuadrados <b>no puede</b> recoger suficiente agua para proporcionar ", " litros por día, que es la necesidad de agua esencial de tu hogar."];
+var REAL_TANK_LBL = ["Si deseas captar toda el agua de lluvia de tu techo actual, necesitas una cisterna con capacidad mínima de", "litros."];
 
-var L_ADDON_LBL = "<small> liters</small>";
 
 var TOOLTIP_TEXT = {
-	min_roof: "<b><big>Minimum roof area</big></b><br>This number indicates the minimum roof area required for you to capture enough rainwater to meet your household's essential water need for the entire year. <br><br><i>This result assumes that your cistern begins collecting water at the beginning of the rainy season and is based on average rainfall data</i>. ",
-	min_tank: "<b><big>Minimum cistern volume</big></b><br>If you use the minimum roof area inidicated to the left, you need this cistern volume to capture all the water coming off of your roof. This cistern will be large enough to meet your household's essential water need year-round on a year with <i>average rainfall</i>.",
-	real_roof: "<b><big>Your actual roof area</big></b><br>This is your roof area. It is calculated by multiplying together the length and width of your roof.",
-	real_tank: "<b><big>Required cistern volume using your current roof</big></b><br>If you collect all the water that hits your roof during an average year, you would need this cistern volume."
+	min_roof: "<b><big>Superficie mínima del techo</big></b><br>Este número indica el área de techo mínima requerida para que puedas captar suficiente agua de lluvia para satisfacer la necesidad de agua esencial de tu hogar durante todo el año. <br><br><i>Este resultado supone que tu cisterna comienza a captar el agua al comienzo de la estación de lluvias y se basa en los datos de lluvia promedio</i>. ",
+	min_tank: "<b><big>Volumen mínimo de la cisterna</big></b><br>Si utilizas el área de techo mínima inidicada a la izquierda, necesitas este volumen de cisterna para captar todo el agua que baja de tu techo. Esta cisterna será lo suficientemente grande como para satisfacer las necesidades esenciales de agua de tu hogar durante todo el año con <i>precipitaciones promedio</i>.",
+	real_roof: "<b><big>El área de tu techo</big></b><br>Esta es el área de tu azotea. Se calcula multiplicando el largo y el ancho de tu techo.",
+	real_tank: "<b><big>Volumen de cisterna necesario usando tu techo actual</big></b><br>Si captas toda el agua que cae en tu techo durante un año promedio, necesitarías este volumen de cisterna."
 }
 
-var MIN_HEADER = "<b>Minimum Essential Requirements</b>";
-var REAL_HEADER = "<b>Your Roof's Capacity</b>";
+var MIN_HEADER = "<b>Requisitos Esenciales Mínimos	</b>";
+var REAL_HEADER = "<b>Capacidad de tu Techo</b>";
 
 ////// 		FOOTER 					//////
 var FOOTER_TXT = "<a href='https://www.caminosdeagua.org' target='_blank'>How does this work?</a> | Created by <a href='https://www.caminosdeagua.org' target='_blank'>Caminos de Agua</a> | Data from <a href='http://smn.cna.gob.mx/es/informacion-climatologica-ver-estado?estado=gto' target='_blank'>SMN</a>";
