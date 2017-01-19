@@ -62,7 +62,8 @@ var CALC_BUTTON_LBL = "Calcula!";
 var BACK2INPUTS_BUTTON_LBL = "Cambiar mi información";
 
 var LHS_DISPLAY_TITLE = "¡Buen trabajo!";
-var LHS_INSTRUCTIONS = "Asegúrate de que la información siguiente se introdujo correctamente. Si no, presiona el botón de abajo para cambiar tu información. Los resultados se muestran en el panel de la derecha. Para una explicación de cada resultado, pasa el ratón sobre la casilla correspondiente. <br><br>Estos resultados se refieren a la necesidad de <b>agua esencial</b> de tu hogar - la cantidad de agua necesaria para beber y cocinar solamente.<br><br><i>Nota: Estos resultados suponen que tu captación de agua de lluvia comienza al inicio de la estación de lluvia. Comenzar en cualquier otra época del año aumenta el riesgo de no tener siempre suficiente agua de lluvia almacenada durante el primer año de tu sistema.</i>"
+var LHS_INSTRUCTIONS = "Asegúrate de que la información siguiente se introdujo correctamente. Si no, presiona el botón de abajo para cambiar tu información. Los resultados se muestran en el panel de la derecha. Para una explicación de cada resultado, pasa el ratón sobre la casilla correspondiente. <br><br>Estos resultados se refieren a la necesidad de <b>agua esencial</b> de tu hogar - la cantidad de agua necesaria para beber y cocinar solamente.";
+var PS_NOTE = "<i>Nota: Estos resultados suponen que tu captación de agua de lluvia comienza al inicio de la estación de lluvia. Comenzar en cualquier otra época del año aumenta el riesgo de no tener siempre suficiente agua de lluvia almacenada durante el primer año de tu sistema.</i>";
 
 var MUN_TXT = ["Vives en <b>","</b>."];
 var MONTHLY_USE_TXT = "You have chosen to enter your own monthly rainfall data. <i>Please note: we cannot account for how much water you will use to flush your roof on each rainfall, so the results to the right will be slight under-estimates.</i><br><br>You have entered:"
