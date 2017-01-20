@@ -15,8 +15,13 @@ var INSTRUCTIONS = "<b>Por favor, responde las siguientes preguntas sobre tu hog
 var MONTHS = ["Ene", "Feb", "Mar", "Abr",
 				"May", "Jun", "Jul", "Ago",
 				"Sep", "Oct", "Nov", "Dic"];
+				
+var FULL_MONTHS_DISPLAY = ["Enero", "Febrero", "Marzo",
+				"Abril", "Mayo", "Junio",
+				"Julio", "Agosto", "Septiembre",
+				"Octubre", "Noviembre", "Diciembre"];	// month names for getting rainfall. 
 			
-var MONTHLY_RAIN_LBL = "Por favor captura tus datos de lluvia mensuales<br>en <b>milímetros (mm)</b>:";
+var MONTHLY_RAIN_LBL = "Por favor captura tus datos de precipitación mensual<br>en <b>milímetros (mm)</b>:";
 
 //////////////////////////////////////////
 //										//
@@ -24,7 +29,7 @@ var MONTHLY_RAIN_LBL = "Por favor captura tus datos de lluvia mensuales<br>en <b
 //										//
 //////////////////////////////////////////
 
-var CHECKBOX_LBL = "Tengo mis propios datos mensuales de lluvia";
+var CHECKBOX_LBL = "Tengo mis datos de precipitación mensual en milimetros<br>(lluvia que cae por mes)";
 
 //////		MUNICIPALITY			//////
 var MUNI0_LBL = "Selecciona tu domicilio haciendo clic en el mapa de abajo:";
@@ -50,7 +55,7 @@ var SPANISH_ROOF_LBL_LOWER = "teja";
 var ROOF_TYPES_LOWER = [CEMENT_ROOF_LBL_LOWER, SHEET_ROOF_LBL_LOWER, SPANISH_ROOF_LBL_LOWER];
 
 //////		CALCULATE BUTTON 	    //////
-var CALC_BUTTON_LBL = "Calcula!";
+var CALC_BUTTON_LBL = "Calcula";
 
 //////////////////////////////////////////
 //										//
@@ -66,7 +71,7 @@ var LHS_INSTRUCTIONS = "Asegúrate de que la información siguiente se introdujo
 var PS_NOTE = "<i>Nota: Estos resultados suponen que tu captación de agua de lluvia comienza al inicio de la estación de lluvia. Comenzar en cualquier otra época del año aumenta el riesgo de no tener siempre suficiente agua de lluvia almacenada durante el primer año de tu sistema.</i>";
 
 var MUN_TXT = ["Vives en <b>","</b>."];
-var MONTHLY_USE_TXT = "You have chosen to enter your own monthly rainfall data. <i>Please note: we cannot account for how much water you will use to flush your roof on each rainfall, so the results to the right will be slight under-estimates.</i><br><br>You have entered:"
+var MONTHLY_USE_TXT = "Has elegido ingresar tus datos de precipitación mensual en milímetros. Ten en cuenta que el área de tu azotea a la derecha será ligeramente menor ya que no sabemos dónde vives ni con qué frecuencia llueve.</i><br><br>Has registrado:"
 var UNITS = "mm";
 var PPL_TXT = ["Tu hogar tiene <b>"," </b>persona."," </b>personas."];
 var LEN_WID_TXT = ["Tu techo es de <b>"," de largo por <b>"," de ancho."];
@@ -89,8 +94,8 @@ var REAL_ROOF_LBL_RED = ["El área de tu techo de", "metros cuadrados <b>no pued
 var REAL_TANK_LBL = ["Si deseas captar toda el agua de lluvia de tu techo actual, necesitas una cisterna con capacidad mínima de", "litros."];
 
 var TOOLTIP_TEXT = {
-	min_roof: "<b><big>Superficie mínima del techo</big></b><br>Este número indica el área de techo mínima requerida para que puedas captar suficiente agua de lluvia para satisfacer la necesidad de agua esencial de tu hogar durante todo el año. <br><br><i>Este resultado supone que tu cisterna comienza a captar el agua al comienzo de la estación de lluvias y se basa en los datos de lluvia promedio</i>. ",
-	min_tank: "<b><big>Volumen mínimo de la cisterna</big></b><br>Si utilizas el área de techo mínima inidicada a la izquierda, necesitas este volumen de cisterna para captar todo el agua que baja de tu techo. Esta cisterna será lo suficientemente grande como para satisfacer las necesidades esenciales de agua de tu hogar durante todo el año con <i>precipitaciones promedio</i>.",
+	min_roof: "<b><big>Superficie mínima del techo</big></b><br>Este número indica el área de techo mínima requerida para que puedas captar suficiente agua de lluvia para satisfacer la necesidad de agua esencial de tu hogar durante todo el año. <br><br><i>Este resultado supone que tu cisterna comienza a captar el agua al comienzo de la estación de lluvias y se basa en los datos de precipitación promedio</i>. ",
+	min_tank: "<b><big>Volumen mínimo de la cisterna</big></b><br>Si utilizas el área de techo mínima inidicada a la izquierda, necesitas este volumen de cisterna para captar todo el agua que baja de tu techo. Esta cisterna será lo suficientemente grande como para satisfacer las necesidades esenciales de agua de tu hogar durante todo el año con <i>la precipitación promedio</i>.",
 	real_roof: "<b><big>El área de tu techo</big></b><br>Esta es el área de tu azotea. Se calcula multiplicando el largo y el ancho de tu techo.",
 	real_tank: "<b><big>Volumen de cisterna necesario usando tu techo actual</big></b><br>Si captas toda el agua que cae en tu techo durante un año promedio, necesitarías este volumen de cisterna."
 }
