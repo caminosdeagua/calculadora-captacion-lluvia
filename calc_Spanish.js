@@ -105,3 +105,12 @@ var REAL_HEADER = "<b>Capacidad de tu Techo</b>";
 
 ////// 		FOOTER 					//////
 var FOOTER_TXT = "<a href='https://www.caminosdeagua.org' target='_blank'>How does this work?</a> | Created by <a href='https://www.caminosdeagua.org' target='_blank'>Caminos de Agua</a> | Data from <a href='http://smn.cna.gob.mx/es/informacion-climatologica-ver-estado?estado=gto' target='_blank'>SMN</a>";
+
+
+//////////////////////////////////////////
+//										//
+//		MOBILE BRWOSER DISPLAY	 		//
+//										//
+//////////////////////////////////////////
+
+var MOBILE_BROWSER_MESSAGE = "<big><b>We're sorry!</b></big><br>This rainwater harvesting calculator is not get available for mobile browers. You can view it on a laptop, desktop computer, or tablet. For more information on rainwater harvesting, check out our <a href='https://www.caminosdeagua.org'>website</a>.";
