@@ -113,4 +113,4 @@ var FOOTER_TXT = "<a href='https://www.caminosdeagua.org' target='_blank'>How do
 //										//
 //////////////////////////////////////////
 
-var MOBILE_BROWSER_MESSAGE = "<big><b>We're sorry!</b></big><br>This rainwater harvesting calculator is not get available for mobile browers. You can view it on a laptop, desktop computer, or tablet. For more information on rainwater harvesting, check out our <a href='https://www.caminosdeagua.org'>website</a>.";
+var MOBILE_BROWSER_MESSAGE = "<big><b>¡Lo sentimos!</b></big><br>Esta Calculadora de Captación de Lluvia no está disponible para navegadores móviles. Puedes verla en una laptop,  computadora de escritorio o Tablet. Para más información sobre captación de lluvia visita nuestra <a href='https://www.caminosdeaguamexico.org'>página web</a>.";
