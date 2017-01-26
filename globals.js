@@ -42,8 +42,8 @@ var ESSENTIAL_DAILY_USE = 5; //Liters per day per person
 
 var SMA_START_MONTH = 5; // Start inventory calculation in june (jan=0, feb=1, mar=2, etc.)
 
-var RED = "#e50d0d";//"#d84949";
-var GREEN = "#61d849";
+var RED = "#f26f60";//"#e50d0d";//"#d84949";
+var GREEN = "#61d849";//"#a3e23d"//"#61d849";
 var DARK_BLUE = "#63aec1";
 var LIGHT_BLUE = "#c9e9f2";
 var BLACK = "#000000";
@@ -56,9 +56,9 @@ var DISABLED_BACK = "#EEEEEE";
 var DISABLED_BORDER = "#BBBBBB";
 var DISABLED_TEXT = "#BBBBBB";
 
-var CEMENT_URL = "https://dl.dropboxusercontent.com/s/jt6n2b2wo7l9yig/Concrete.png";
-var SHEET_URL = "https://dl.dropboxusercontent.com/s/1sf2bvq10ln7wwa/Corrugated_Sheet.png";
-var SPANISH_URL = "https://dl.dropboxusercontent.com/s/8obfa2hq5tmku7x/Spanish_Tile.png";
+var CEMENT_URL = "http://caminosdeagua.github.io/rainwater-calculator/img/Concrete.png";
+var SHEET_URL = "http://caminosdeagua.github.io/rainwater-calculator/img/Corrugated_Sheet.png";
+var SPANISH_URL = "http://caminosdeagua.github.io/rainwater-calculator/img/Spanish_Tile.png";
 var ROOF_URLS = [CEMENT_URL, SHEET_URL, SPANISH_URL];
 
 var RAINS = ["jan_rain", "feb_rain", "mar_rain", 
