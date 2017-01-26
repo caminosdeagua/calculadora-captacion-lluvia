@@ -88,10 +88,19 @@ var DISPLAY_TXT = [];
 //////////////////////////////////////////
 
 var MIN_ROOF_LBL = ["Tu hogar necesita un mínimo de", "metros cuadrados del área del techo para captar suficiente agua de lluvia para cubrir tus necesidades esenciales de agua."];
+var MIN_ROOF_LBL_RED = ["","",""];
+var MIN_ROOF_LBL_GREEN = ["","",""];
+
 var MIN_TANK_LBL = ["Si utilizas el área mínima del techo, necesitas al menos una cisterna de ", "litros."];
+
+var MIN_WATER_LBL = ["","",""];
+
+var REAL_ROOF_LBL = ["","",""];
 var REAL_ROOF_LBL_GREEN = ["El área de tu techo de", "metros cuadrados <b><big>puede</big></b> recoger suficiente agua para proporcionar al menos", "litros por día, que es la necesidad de agua esencial de tu hogar."]; 
 var REAL_ROOF_LBL_RED = ["El área de tu techo de", "metros cuadrados <b>no puede</b> recoger suficiente agua para proporcionar ", " litros por día, que es la necesidad de agua esencial de tu hogar."];
 var REAL_TANK_LBL = ["Si deseas captar toda el agua de lluvia de tu techo actual, necesitas una cisterna con capacidad mínima de", "litros."];
+
+var REAL_WATER_LBL = ["","",""];
 
 var TOOLTIP_TEXT = {
 	min_roof: "<b><big>Superficie mínima del techo</big></b><br>Este número indica el área de techo mínima requerida para que puedas captar suficiente agua de lluvia para satisfacer la necesidad de agua esencial de tu hogar durante todo el año. <br><br><i>Este resultado supone que tu cisterna comienza a captar el agua al inicio de la estación de lluvias y se basa en los datos de precipitación promedio</i>. ",
