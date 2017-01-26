@@ -36,7 +36,7 @@ var MUNI0_LBL = "Selecciona tu domicilio haciendo clic en el mapa de abajo:";
 var MUNIS = [];
 
 //////		PEOPLE IN HOUSEHOLD		//////
-var PPL0_LBL = "¿Cuantas personas viven en tu casa?";
+var PPL0_LBL = "¿Cuántas personas viven en tu casa?";
 
 //////		ROOF SIZE 				//////
 var LENGTH0_LBL = "¿Cuál es la longitud de tu techo (<b>metros</b>)?";
