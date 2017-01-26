@@ -5,7 +5,7 @@ html, body, #everything{
 	margin: 0; 
 	background: #999999; 
 	overflow: hidden;	
-	font-family: Georgia, serif;
+	font-family: Tahoma, sans-serif;
 	font-size: 16px;
 }
 
@@ -90,6 +90,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .number_input{
 	margin: 10px;
+	margin-bottom: 10px;
 }
 
 input[type=text] {
@@ -135,7 +136,7 @@ label, h1, h3, p, button, iframe {
 	visibility: hidden;
     background-color: rgba(230,230,230,0.95);
     color: #000;
-	font-size: 14px;
+	font-size: 12px;
     text-align: left;
     border-radius: 6px;
     padding: 5px;
@@ -178,7 +179,7 @@ label, h1, h3, p, button, iframe {
 }
 
 .return_num {
-	font-size: 3em;
+	font-size: 2.75em;
 	margin-top: -40px;
 }
 
@@ -273,21 +274,21 @@ button {
 	margin: 0;
 	margin-top: 15px;
 	overflow: hidden;
-	height: 11em;
-	width: 40em;
-	font-family: Georgia, serif;
-	font-size: 22px;
+	height: 10em;
+	width: 48em;
+	/*font-family: , serif;*/
+	font-size: 20px;
 }
 
 #left {
 	background-color: #63aec1;
-	border: 2px solid black;
 	display: inline-block;
     margin: 0;
+	margin-left: 1%;
     position: absolute;
     top: 0;
 	height: 95%;
-	width: 49%;
+	width: 32%;
 	top: 50%;
 	-ms-transform: translate(0%, -50%);
     transform: translate(0%, -50%);
@@ -297,7 +298,7 @@ button {
 	border-radius: 8px;
 }
 
-#right {
+#center {
 	background-color: #63aec1;
 	border: 2px solid black;
 	display: inline-block;
@@ -305,22 +306,48 @@ button {
     position: absolute;
     top: 0;
 	height: 95%;
-	width: 49%;
+	width: 32%;
 	top: 50%;
 	-ms-transform: translate(0%, -50%);
     transform: translate(0%, -50%);
-	float: right;
-    right: 0%;
+	float: left;
+	left: 34%;
+	border: 2px solid black;
+	border-radius: 8px;
+}
+
+#right {
+	background-color: #63aec1;
+	display: inline-block;
+    margin: 0;
+	margin-right: 1%;
+    position: absolute;
+    top: 0;
+	height: 95%;
+	width: 32%;
+	top: 50%;
+	-ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+	float: left;
+    left: 67%;
 	border: 2px solid black ;
 	border-radius: 8px;
 }
 
 .results_headers {
-	font-size: 40px;
-	text-decoration: underline;
-	margin-top: 22px;
+	font-size: 32px;
+	/*text-decoration: underline;*/
+	margin-top: 15px;
 }
 
+#min_header {
+	margin-top: 20px;
+}
+
+
+#top_box {
+	height: 17em;
+}
 #bottom_box {
 	margin-bottom: 20px;
 }
@@ -342,7 +369,8 @@ button {
 	border: 2px black solid; 
 	border-radius: 15px;
 	margin-bottom: 30px;
-	padding: 10px;
+	padding: 30px;
+	padding-top: 15px;
 }
 
 #form_box_left {
@@ -365,14 +393,14 @@ button {
 	display: inline-block;
 	border: 2px solid black;
 	border-radius: 15px;
-	margin-left: 10px;
+	margin-left: 30px;
 }
 
 #instructions {
 	display: block;
 	position: relative;
 	margin: 0px;
-	margin-bottom: 6px;
+	margin-bottom: 15px;
 	padding: 0;
 	
 }
