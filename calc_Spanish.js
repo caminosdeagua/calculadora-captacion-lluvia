@@ -29,7 +29,7 @@ var MONTHLY_RAIN_LBL = "Por favor captura tus datos de precipitación mensual<br
 //										//
 //////////////////////////////////////////
 
-var CHECKBOX_LBL = "Tengo mis datos de precipitación mensual en milímetros<br>(lluvia que cae por mes)";
+var CHECKBOX_LBL = "Tengo mis datos de precipitación mensual en<br>milímetros (lluvia que cae por mes)";
 
 //////		MUNICIPALITY			//////
 var MUNI0_LBL = "Selecciona tu domicilio haciendo clic en el mapa de abajo:";
