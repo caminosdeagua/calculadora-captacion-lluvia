@@ -67,7 +67,7 @@ var CALC_BUTTON_LBL = "Calcula";
 var BACK2INPUTS_BUTTON_LBL = "Cambiar mi información";
 
 var LHS_DISPLAY_TITLE = "¡Buen trabajo!";
-var LHS_INSTRUCTIONS = "Asegúrate de que la siguiente información se introdujo correctamente. Si no, presiona el botón de abajo para cambiar tu información. Los resultados se muestran en el panel de la derecha. Para una explicación de cada resultado, pasa el ratón sobre la casilla correspondiente. <br><br>Estos resultados se refieren a la necesidad de <b>agua esencial</b> de tu hogar - la cantidad de agua necesaria para beber y cocinar solamente.";
+var LHS_INSTRUCTIONS = "Estos resultados se refieren a la necesidad de <b>agua esencial</b> de tu hogar - la cantidad de agua necesaria para beber y cocinar solamente.";
 var PS_NOTE = "<i>Nota: Estos resultados suponen que tu captación de agua de lluvia comienza al inicio de la estación lluviosa. Comenzar en cualquier otra época del año aumenta el riesgo de no tener siempre suficiente agua de lluvia almacenada durante el primer año de tu sistema.</i>";
 
 var MUN_TXT = ["Vives en <b>","</b>."];
@@ -87,30 +87,26 @@ var DISPLAY_TXT = [];
 //										//
 //////////////////////////////////////////
 
-var MIN_ROOF_LBL = ["Tu hogar necesita un mínimo de", "metros cuadrados del área del techo para captar suficiente agua de lluvia para cubrir tus necesidades esenciales de agua."];
-var MIN_ROOF_LBL_RED = ["","",""];
-var MIN_ROOF_LBL_GREEN = ["","",""];
+var MIN_ROOF_LBL_RED = ["<b><big>Área mínima del techo</big></b><br>Para satisfacer esta necesidad de agua anual, tu hogar necesita al menos","metros cuadrados (m2) de la superficie del techo. Parece que tu techo actual no es lo suficientemente grande."];
+var MIN_ROOF_LBL_GREEN = ["<b><big>Área mínima del techo</big></b><br>Para satisfacer esta necesidad de agua anual, tu hogar necesita al menos","metros cuadrados (m2) de la superficie del techo. ¡Parece que el tamaño actual de tu techo es suficientemente grande!"];
+var MIN_TANK_LBL = ["<b><big>Volumen mínimo de la cisterna</big></b><br><br>Para capturar toda el agua del área mínima de tu techo, necesitas al menos una cisterna de", "litros."];
+var MIN_WATER_LBL = ["<b><big>Necesidad de agua anual</big></b><br><br>Tu hogar necesita","litros de agua <a href='http://caminosdeaguamexico.org/agua-segura-sana-sustentable' target='_blank'>sana</a> al año para beber y cocinar. Esto satisface las necesidades diarias esenciales de\xa0","\xa0litros para tu hogar."];
 
-var MIN_TANK_LBL = ["Si utilizas el área mínima del techo, necesitas al menos una cisterna de ", "litros."];
-
-var MIN_WATER_LBL = ["","",""];
-
-var REAL_ROOF_LBL = ["","",""];
-var REAL_ROOF_LBL_GREEN = ["El área de tu techo de", "metros cuadrados <b><big>puede</big></b> recoger suficiente agua para proporcionar al menos", "litros por día, que es la necesidad de agua esencial de tu hogar."]; 
-var REAL_ROOF_LBL_RED = ["El área de tu techo de", "metros cuadrados <b>no puede</b> recoger suficiente agua para proporcionar ", " litros por día, que es la necesidad de agua esencial de tu hogar."];
-var REAL_TANK_LBL = ["Si deseas captar toda el agua de lluvia de tu techo actual, necesitas una cisterna con capacidad mínima de", "litros."];
-
-var REAL_WATER_LBL = ["","",""];
+var REAL_ROOF_LBL = ["<b><big>Área actual de tu techo</big></b>","metros cuadrados (m<sup>2</sup>)."];
+var REAL_TANK_LBL = ["<b><big>Volumen de cisterna requerido usando tu techo actual</big></b>","litros."];
+var REAL_WATER_LBL = ["<b><big>Tu captación anual máxima de agua</big></b>","litros."];
 
 var TOOLTIP_TEXT = {
+	min_water: "<b><big>Captación anual mínima de agua</big></b><br>Esto se calcula simplemente suponiendo que cada miembro de su hogar utiliza un promedio de 5 litros por día para usos esenciales (beber y cocinar). Los 5 litros por día se multiplican por el número de personas en su hogar y el número de días en un año (365).",
 	min_roof: "<b><big>Superficie mínima del techo</big></b><br>Este número indica el área de techo mínima requerida para que puedas captar suficiente agua de lluvia para satisfacer la necesidad de agua esencial de tu hogar durante todo el año. <br><br><i>Este resultado supone que tu cisterna comienza a captar el agua al inicio de la estación de lluvias y se basa en los datos de precipitación promedio</i>. ",
 	min_tank: "<b><big>Volumen mínimo de la cisterna</big></b><br>Si utilizas el área de techo mínima inidicada a la izquierda, necesitas este volumen de cisterna para captar todo el agua que baja de tu techo. Esta cisterna será lo suficientemente grande como para satisfacer las necesidades esenciales de agua de tu hogar durante todo el año con la precipitación <b>promedio</b>.",
+	real_water: "<b><big>Tu captación anual máxima de agua</big></b><br>El agua que tu techo actual puede acumular durante un año promedio.<br><br><i>Precaución: incluso si tu techo actual puede recoger más agua (este cuadro) de lo que necesitas (el cuadro de arriba), ten cuidado. A menos que los cuadros de arriba sean verdes, tu cisterna podría secarse.</i>",
 	real_roof: "<b><big>El área de tu techo</big></b><br>Esta es el área de tu azotea. Se calcula multiplicando el largo y el ancho de tu techo.",
-	real_tank: "<b><big>Volumen de cisterna necesario usando tu techo actual</big></b><br>Si captas toda el agua que cae en tu techo durante un año promedio, necesitarías este volumen de cisterna."
+	real_tank: "<b><big>Volumen de cisterna requerido usando tu techo actual</big></b><br>Si recoges toda el agua que cae en tu techo durante un año promedio, necesitarías este volumen de cisterna."
 }
 
-var MIN_HEADER = "<b>Requisitos Esenciales Mínimos	</b>";
-var REAL_HEADER = "<b>Capacidad de tu Techo</b>";
+var MIN_HEADER = "<b>Requisitos Mínimos para Beber y Cocinar</b>";
+var REAL_HEADER = "<b>Capacidad Máxima de tu Techo</b>";
 
 ////// 		FOOTER 					//////
 var FOOTER_TXT = "<a href='http://nbviewer.jupyter.org/github/caminosdeagua/rainwater-calculator/blob/master/data/Explanation.pdf' target='_blank'>How does this work?</a> | Created by <a href='https://www.caminosdeagua.org' target='_blank'>Caminos de Agua</a> | Data from <a href='http://smn.cna.gob.mx/es/informacion-climatologica-ver-estado?estado=gto' target='_blank'>SMN</a>";
