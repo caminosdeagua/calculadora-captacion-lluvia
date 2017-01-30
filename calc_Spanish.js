@@ -4,11 +4,11 @@
 //										//
 //////////////////////////////////////////
 
-var CALC_TITLE = "Calculadora: Captación de lluvia";
+var CALC_TITLE = "Calculadora: captación de lluvia";
 
-var HEADER = "Calculadora de Captación de Agua de Lluvia";
+var HEADER = "Calculadora de captación de agua de lluvia";
 
-var SUB_HEADER = "Esta calculadora puede usarse para dimensionar un sistema de recolección de agua de lluvia que proporcione suficiente agua potable para beber y cocinar - la necesidad de agua esencial en tu hogar. Si tienes preguntas, comentarios o colaboraciones, por favor <a href='http://caminosdeaguamexico.org/contactenos/' target = '_blank'>contáctanos</a>!";
+var SUB_HEADER = "Esta calculadora puede usarse para dimensionar un sistema de captación de agua de lluvia que proporcione suficiente agua potable para beber y cocinar - la necesidad de agua esencial en tu hogar. Si tienes preguntas, comentarios o colaboraciones, por favor <a href='http://caminosdeaguamexico.org/contactenos/' target = '_blank'>contáctanos</a>!";
 
 var INSTRUCTIONS = "<b>Por favor, responde las siguientes preguntas sobre tu hogar lo mejor que puedas.</b>";
 
@@ -105,8 +105,8 @@ var TOOLTIP_TEXT = {
 	real_tank: "<b><big>Volumen de cisterna requerido usando tu techo actual</big></b><br>Si recoges toda el agua que cae en tu techo durante un año promedio, necesitarías este volumen de cisterna."
 }
 
-var MIN_HEADER = "<b>Requisitos Mínimos para Beber y Cocinar</b>";
-var REAL_HEADER = "<b>Capacidad Máxima de tu Techo</b>";
+var MIN_HEADER = "<b>Requisitos mínimos para beber y cocinar</b>";
+var REAL_HEADER = "<b>Capacidad máxima de tu techo</b>";
 
 ////// 		FOOTER 					//////
 var FOOTER_TXT = "<a href='http://nbviewer.jupyter.org/github/caminosdeagua/rainwater-calculator/blob/master/data/Explanation.pdf' target='_blank'>How does this work?</a> | Created by <a href='https://www.caminosdeagua.org' target='_blank'>Caminos de Agua</a> | Data from <a href='http://smn.cna.gob.mx/es/informacion-climatologica-ver-estado?estado=gto' target='_blank'>SMN</a>";
