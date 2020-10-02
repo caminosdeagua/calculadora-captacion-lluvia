@@ -1,4 +1,19 @@
-var geojson
+//////////////////////////////////////////////////////////////////
+//	Title: 	rainmap_scripts.js
+//
+// 	Purpose: This file holds all of the language-dependent 
+//		display text for the rainwater calculator.
+//
+//	Update History:
+//		2/7/16	aaron krupp		file complete, added title block
+//////////////////////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////////////////////////////////////
+////					  	initEmbeddedMap FUNCTION	 				  	////
+//// 		This function initializes the map within the calculator			////
+////////////////////////////////////////////////////////////////////////////////
+
 
 function initEmbeddedMap() {	
 	initMap(); 					// Initialize and display the map object
@@ -31,9 +46,9 @@ function initMap() {
 
 
 function applyBaseMap() {
-	//map.addLayer(new L.StamenTileLayer(STAMEN_MAP_TYPE), {});			//This line is to use Stamen basemaps		
-	L.mapbox.accessToken = MAPBOX_ID;									// These two lines are to use Mapbox basemaps
-	map.addLayer(new L.mapbox.tileLayer(MAPBOX_MAP_TYPE), {});			// These two lines are to use Mapbox basemaps	
+	map.addLayer(new L.StamenTileLayer(STAMEN_MAP_TYPE), {});			//This line is to use Stamen basemaps		
+	//L.mapbox.accessToken = MAPBOX_ID;									// These two lines are to use Mapbox basemaps
+	//map.addLayer(new L.mapbox.tileLayer(MAPBOX_MAP_TYPE), {});			// These two lines are to use Mapbox basemaps	
 }
 
 function grabData() {
